@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>java-getting-started</name>
+    <name>BusTicketSystem</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -13,12 +13,19 @@
     </parent>
 
     <groupId>com.heroku</groupId>
-    <artifactId>java-getting-started</artifactId>
+    <artifactId>BusTicketSystem</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>webapp-runner-repo</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -40,6 +47,12 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.jsimone</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>9.0.41.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
